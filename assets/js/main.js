@@ -32,6 +32,8 @@
         el.addEventListener('scroll', listener)
     }
 
+
+
     /**
      * Mobile nav toggle
      */
@@ -60,17 +62,16 @@
         heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
             heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
     });
+    /* Carousel instalaciones */
+    let heroCarouselIndicatorsInstalacion = select("#hero-carousel-indicators-instalacion")
+    let heroCarouselItemsInstalacion = select('#heroCarouselInstalacion .carousel-item-instalacion', true)
 
-    //VIDEO POP - UP ===
-    //    === === === === === === === === === === === === === === === === === === === === === === === == * /
-    $('.video-popup').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false,
-    });
+    (index === 0) ?
+    heroCarouselIndicatorsInstalacion.innerHTML += "<li data-bs-target='#heroCarouselInstalacion' data-bs-slide-to='" + index + "' class='active'></li>":
+        heroCarouselIndicatorsInstalacion.innerHTML += "<li data-bs-target='#heroCarouselInstalacion' data-bs-slide-to='" + index + "'></li>"
+
+
+
 
     /* Nivo Lightbox
     ========================================================*/
@@ -104,4 +105,59 @@
             }
         ]
     });
-})()
+
+    //===== Slick
+
+    $('.slider-items-active').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 800,
+        arrows: true,
+        prevArrow: '<span class="prev"><i class="bi bi-chevron-left"></i></span>',
+        nextArrow: '<span class="next"><i class="bi bi-chevron-right"></i></span>',
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ]
+    });
+    //===== slick Testimonial Four
+
+    $('.testimonial-active').slick({
+        dots: false,
+        arrows: true,
+        prevArrow: '<span class="prev"><i class="bi bi-chevron-left"></i></span>',
+        nextArrow: '<span class="next"><i class="bi bi-chevron-right"></i></span>',
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 800,
+        slidesToShow: 1,
+    });
+
+})();

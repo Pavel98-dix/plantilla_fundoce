@@ -681,38 +681,55 @@ section {
 }
 
 .single-services .services-content .title {
-  font-size: 20px;
-  color: var(--first-color);
+  font-size: 2.13rem;
+  padding-top: .66rem;
+  color: #121212;
 }
 
 .section-title h5 {
-  position: relative;
-  font-size: 18px;
-  color: #4858ac;
-  font-weight: 500;
-  padding-left: 110px;
-}
-
-.section-title h5::before {
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 0;
-  width: 100px;
-  height: 1px;
-  background-color: #4858ac;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--first-color);
+  text-transform: uppercase;
 }
 
 .section-title .title {
   font-size: 2rem;
+  color: #121212;
 }
 
 @media (max-width: 767px) {
   .section-title .title {
     font-size: 26px;
   }
+}
+
+.services-area .section-title .services-line {
+  padding-top: .33rem;
+}
+
+.services-area .section-title .services-line li {
+  height: 5px;
+  background-color: #4858ac;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 3px;
+}
+
+.services-area .section-title .services-line li:nth-of-type(1) {
+  width: 3.33rem;
+}
+
+.services-area .section-title .services-line li:nth-of-type(2) {
+  width: 1rem;
+}
+
+.services-area .section-title .services-line li:nth-of-type(3) {
+  width: .66rem;
+}
+
+.services-area .section-title .services-line li:nth-of-type(4) {
+  width: .33rem;
 }
 
 /* Boton Services */
@@ -964,4 +981,140 @@ section {
   text-align: center;
   cursor: pointer;
 }
+
+/*===== TESTIMONIAL STYLE THREE =====*/
+.testimonial-area {
+  padding-top: 80px;
+  padding-bottom: 130px;
+  background-color: #f4f6f7;
+}
+
+.testimonial-area .testimonial-left-content .sub-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--first-color);
+  text-transform: uppercase;
+}
+
+.testimonial-area .testimonial-left-content .title {
+  font-size: 2.13rem;
+  padding-top: .66rem;
+  color: #121212;
+}
+
+.testimonial-area .testimonial-left-content .testimonial-line {
+  padding-top: .66rem;
+}
+
+.testimonial-area .testimonial-left-content .testimonial-line li {
+  height: 5px;
+  background-color: #4858ac;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 3px;
+}
+
+.testimonial-area .testimonial-left-content .testimonial-line li:nth-of-type(1) {
+  width: 3.33rem;
+}
+
+.testimonial-area .testimonial-left-content .testimonial-line li:nth-of-type(2) {
+  width: 1rem;
+}
+
+.testimonial-area .testimonial-left-content .testimonial-line li:nth-of-type(3) {
+  width: .66rem;
+}
+
+.testimonial-area .testimonial-left-content .testimonial-line li:nth-of-type(4) {
+  width: .33rem;
+}
+
+.testimonial-area .about-accordion .card {
+  border: 0;
+  background: none;
+}
+
+.testimonial-area .about-accordion .card .card-header {
+  padding: 0;
+  border: 0;
+  background: none;
+  margin-top: 2rem;
+}
+
+.testimonial-area .about-accordion .card .card-header a {
+  font-size: 1.13rem;
+  font-weight: 500;
+  color: #000;
+  display: block;
+  position: relative;
+  padding-right: 1.33rem;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-area .about-accordion .accordion .card .card-header a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-area .about-accordion .accordion .card .card-header a {
+    font-size: 16px;
+  }
+}
+
+.testimonial-area .about-accordion .card .card-header a::before {
+  content: "\f14c";
+  font-family: bootstrap-icons !important;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-weight: 800;
+}
+
+.testimonial-area .testimonial-right-content {
+  position: relative;
+  border-radius: 1.33rem;
+}
+
+.testimonial-area .about-accordion .accordion .card .card-body {
+  padding: 20px 20px 0;
+}
+
+.testimonial-area .about-image img {
+  width: 100%;
+}
+
+#instalacion {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+#instalacion .carousel,
+#instalacion .carousel-inner,
+#instalacion .carousel-item,
+#instalacion .carousel-item::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 40px;
+  height: 100%;
+  width: 100%;
+}
+
+#instalacion .carousel-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* La tabla de posiciones */
+/* #position .position-header {
+    background-color: #35578b;
+    padding: 1.4rem;
+    border-radius: 5px 5px 0px 0px;
+} */
 /*# sourceMappingURL=style.css.map */

@@ -15,15 +15,18 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!-- Vendos CSS files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap-grid.min.css">
+
+    <!-- Magific Popup -->
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
     <!-- Styele -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
 
 </head>
 
@@ -37,9 +40,9 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="acerca.html">Sobre Nosotros</a></li>
+                    <li><a href="portfolio.html">Torneos</a></li>
                     <li><a href="services.html">Servicios</a></li>
                     <li><a href="portfolio.html">Portafolio</a></li>
-                    <li><a href="contactanos.html">Contactanos</a></li>
                     <li><a href="index.html" class="getstarted">Iniciar</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -145,49 +148,6 @@
         </section>
         <!-- End Clients Section -->
 
-        <!--====== SHOWCASE PART START ======-->
-
-        <section id="showcase" class="showcase-area pt-100 pb-130">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="showcase-title pt-25">
-                            <h2 class="title">¿Quienes Somos?</h2>
-                        </div>
-                        <!-- showcase title -->
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="showcase-title pt-25">
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-                                unde omnis iste natus error sit voluptatem accusantium doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo.</p>
-                        </div>
-                        <!-- showcase title -->
-                    </div>
-                </div>
-                <!-- row -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="showcase-active mt-65">
-                            <div class="single-showcase">
-                                <img src="assets/img/features-3.png" alt="Testimonial">
-                                <a href="#" class="main-btn">Full Preview</a>
-                            </div>
-                            <!-- single showcase -->
-                            <div class="single-showcase">
-                                <img src="assets/img/features-4.png" alt="Testimonial">
-                                <a href="#" class="main-btn">Full Preview</a>
-                            </div>
-                            <!-- single showcase -->
-                        </div>
-                        <!-- showcase active -->
-                    </div>
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </section>
-
-        <!--====== SHOWCASE PART ENDS ======-->
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container">
@@ -235,10 +195,16 @@
         <section id="services" class="services-area pt-125 pb-130">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="section-title pb-30">
                             <h5 class="mb-15">Nuestra Historia</h5>
                             <h3 class="title mb-15">Conocenos</h3>
+                            <ul class="services-line">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia, aspernatur hic minima, delectus laborum quae repellendus perspiciatis quibusdam in officiis praesentium ipsum alias illum veritatis magnam adipisci deleniti
                                 ipsam!
                             </p>
@@ -249,7 +215,7 @@
                     <div class="col-lg-6">
                         <div class="services-left mt-45">
                             <div class="services">
-                                <img src="/assets/img/slide/14.jpg" alt="">
+                                <img src="/assets/img/feature-6.png" alt="">
                                 <a href="#" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
                             </div>
                             <!-- services btn -->
@@ -320,7 +286,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-xs-12">
                         <div class="cta-text">
-                            <h5>Stil confused? Download a free lite version to get started!</h5>
+                            <h5>¿Sabes nuestro reglamento? A continuación podrás descargarlo y así poder saber todos nuestros lineamientos</h5>
                         </div>
                     </div>
                     <div id="descargar" class="col-lg-6 col-md-6 col-xs-12">
@@ -330,22 +296,104 @@
             </div>
         </section>
         <!-- Call To Action Section Start -->
+        <section id="testimonial" class="testimonial-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-left-content">
+                            <h5 class="sub-title">Ven y conocenos</h5>
+                            <h3 class="title">Nuestras instalaciones</h3>
+                            <ul class="testimonial-line">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dolore recusandae animi amet accusamus voluptates repellendus aliquid quisquam sit atque dolor odio expedita blanditiis possimus numquam, eveniet quam eum
+                                quo!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Carousel Instalaciones  -->
+                        <div id="instalacion">
+                            <div id="heroCarouselInstalacion" data-bs-interval="7000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
+                                <ol class="carousel-indicators-instalacion" id="hero-carousel-indicators-instalacion"></ol>
 
+                                <div class="carousel-inner" role="listbox">
 
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-item active" style="background-image: url(assets/img/instalaciones/instalacion1.jpeg)">
+                                    </div>
 
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-item" style="background-image: url(assets/img/instalaciones/instalaciones2.jpeg)">
+                                    </div>
 
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-item" style="background-image: url(assets/img/instalaciones/instalacion1.jpeg)">
+                                    </div>
+
+                                </div>
+
+                                <a class="carousel-control-prev" href="#heroCarouselInstalacion" role="button" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#heroCarouselInstalacion" role="button" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="position" class="position container">
+            <div class="position-header">
+                <div class="position-titulo align-items-start">
+                    <h3>Tabla de position</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">Juvenil</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#">Femenil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-season">
+                <h5>temporada</h5>
+                <select name="season">
+                    <option value="1">...</option>
+                    <option value="2">2021-2022</option>
+                </select>
+                
+            </div>
+        </section> -->
     </main>
+    <!-- JQuery -->
+    <script src="/assets/js/jquery.js"></script>
     <!-- Vandor JS File -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!--  magic popup-->
+    <script src="/assets/js/jquery.magnific-popup.js"></script>
+    <script src="/assets/js/popup.js"></script>
+    <!-- Boostratp -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     <!-- Template Main JS File -->
     <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/owl.carousel.js"></script>
+
+
 
 </body>
 
