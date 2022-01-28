@@ -352,30 +352,604 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="position" class="position container">
+        <section id="position" class="position container">
             <div class="position-header">
                 <div class="position-titulo align-items-start">
-                    <h3>Tabla de position</h3>
+                    <h3>Liga</h3>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="#">Juvenil</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">Femenil</a>
-                    </div>
+                <div class="position-sexo">
+                    <nav>
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <a href="#">Tabla de posiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Estadistícas</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="position-season">
-                <h5>temporada</h5>
-                <select name="season">
-                    <option value="1">...</option>
-                    <option value="2">2021-2022</option>
-                </select>
-                
+                <div class="season">
+                    <h5>temporada</h5>
+                    <div class="custom-select">
+                        <select name="season">
+                            <option value="1">...</option>
+                            <option value="2">2021-2022</option>
+                    </select>
+                        <span class="custom-arrow"></span>
+                    </div>
+                </div>
             </div>
-        </section> -->
+            <div class="accordion" id="acordionTable">
+                <div class="position-category">
+                    <nav>
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <a data-toggle="collapse" role="button" aria-expanded="false" aria-controls="tablePonys" href="#tablePonys">Ponys</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="collapse" role="button" aria-expanded="false" aria-controls="tableAbejas" href="#tableAbejas">Abejas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="collapse" role="button" aria-expanded="false" aria-controls="tableSemillas" href="#tableSemillas">Semillas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="collapse" role="button" aria-expanded="false" aria-controls="tableAlebrijes" href="#tableAlebrijes">Alebrijes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="collapse" role="button" aria-expanded="false" aria-controls="tableElite" href="#tableElite">Élite</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="position-table">
+                    <div class="collapse" aria-labelledby="tablePonys" data-parent="#acordionTable" id="tablePonys">
+                        <h4 class="text-center m-3 text-uppercase">Ponys</h4>
+                        <div class="container table-responsive ">
+                            <div class="table-header">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>G</th>
+                                            <th>E</th>
+                                            <th>P</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>Pts</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>America</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>CruzAzul</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Chivas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>Pumas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Atlas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Tigres</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" aria-labelledby="tableAbejas" data-parent="#acordionTable" id="tableAbejas">
+                        <h4 class="text-center m-3 text-uppercase">Abejas</h4>
+                        <div class="container table-responsive ">
+                            <div class="table-header">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>G</th>
+                                            <th>E</th>
+                                            <th>P</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>Pts</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>America</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>CruzAzul</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Chivas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>Pumas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Atlas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Tigres</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" aria-labelledby="tableSemillas" data-parent="#acordionTable" id="tableSemillas">
+                        <h4 class="text-center m-3 text-uppercase">Semillas</h4>
+                        <div class="container table-responsive ">
+                            <div class="table-header">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>G</th>
+                                            <th>E</th>
+                                            <th>P</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>Pts</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>America</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>CruzAzul</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Chivas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>Pumas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Atlas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Tigres</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" aria-labelledby="tableAlebrijes" data-parent="#acordionTable" id="tableAlebrijes">
+                        <h4 class="text-center m-3 text-uppercase">Alebrijes</h4>
+                        <div class="container table-responsive ">
+                            <div class="table-header">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>G</th>
+                                            <th>E</th>
+                                            <th>P</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>Pts</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>America</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>CruzAzul</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Chivas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>Pumas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Atlas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Tigres</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" aria-labelledby="tableElite" data-parent="#acordionTable" id="tableElite">
+                        <h4 class="text-center m-3 text-uppercase">Élite</h4>
+                        <div class="container table-responsive ">
+                            <div class="table-header">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>G</th>
+                                            <th>E</th>
+                                            <th>P</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>Pts</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>America</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>CruzAzul</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Chivas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>Pumas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Atlas</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Tigres</td>
+                                            <td>4</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>23</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-footer">
+                    <h3 class="title">
+                        Glosario
+                    </h3>
+                    <ul class="position-list">
+                        <li class="position-item">
+                            <span class="position-abbr">PJ: </span> Partidos Jugados
+                        </li>
+                        <li class="position-item">
+                            <span class="position-abbr">G: </span> Partidos Ganados
+                        </li>
+                        <li class="position-item">
+                            <span class="position-abbr">E: </span> Partidos Empatados
+                        </li>
+                        <li class="position-item">
+                            <span class="position-abbr">p: </span> Partidos Perdidos
+                        </li>
+                        <li class="position-item">
+                            <span class="position-abbr">GF: </span> Goles a Favor
+                        </li>
+                        <li class="position-item">
+                            <span class="position-abbr">GC: </span> Goles en Contra
+                        </li>
+                        <li class="position-item">
+                            <span class="position-abbr">DG: </span> Diferiencia de Goles
+                        </li>
+                        <li class="position-item">
+                            <span class="position-abbr">Pts: </span> Puntos
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- JQuery -->
     <script src="/assets/js/jquery.js"></script>
