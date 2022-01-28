@@ -136,7 +136,7 @@ p {
     position: absolute;
     width: 80%;
     bottom: 80%;
-    height: 2px;
+    height: 3px;
     background: transparent;
     @extend .tsLow;
 }
@@ -145,7 +145,7 @@ p {
 .navbar a:focus::after {
     content: "";
     position: absolute;
-    height: 2px;
+    height: 3px;
     background: transparent;
     width: 0%;
     top: 80%;
@@ -1123,12 +1123,36 @@ section {
     background-color: var(--first-color-second);
     padding: 1.4rem;
     border-radius: 5px 5px 0px 0px;
-    box-shadow: 0 3px 2px #bdbdbd;
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
 #position .position-titulo {
     color: #ffffff;
+}
+
+#position .position-state {
+    box-shadow: 0 3px 2px #bdbdbd;
+    margin-bottom: 4px;
+    background-color: var(--first-color-second);
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+#position .position-state .nav-item.active,
+#position .position-state .nav-item:hover {
+    border-bottom: 4px solid #fff;
+    @extend .tsLow;
+}
+
+#position .position-state .nav-item {
+    @extend .tsLow;
+}
+
+#position .position-state .nav .nav-item button {
+    color: #f1f7ff;
+    background: transparent;
+    text-decoration: none;
+    border: none;
 }
 
 #position .position-season {
@@ -1142,9 +1166,10 @@ section {
 #position .position-season .season select {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     font-size: 1rem;
-    padding: 5px 2rem 10px 10px;
+    padding: 0px 1rem 5px 5px;
     border: 0;
     border-radius: 5px;
+    background: #f4f6f7;
 }
 
 #position .position-season .season .custom-select {
@@ -1156,7 +1181,7 @@ section {
     display: block;
     top: 0;
     right: 0;
-    background: var(--first-color-lighter);
+    background: #f4f6f7;
     height: 100%;
     width: 1rem;
     pointer-events: none;
@@ -1192,7 +1217,6 @@ section {
 #position .position-season .season {
     display: inline-block;
     flex-wrap: 1;
-    border-bottom: 1px solid #dadce0;
 }
 
 #position .position-category {
@@ -1211,6 +1235,12 @@ section {
     padding: 2rem 1rem;
     white-space: normal;
     flex: 1;
+    @extend .tsLow;
+}
+
+#position .position-category .active,
+#position .position-category .nav-item:hover {
+    border-bottom: 4px solid #000;
     @extend .tsLow;
 }
 
