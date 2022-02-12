@@ -697,11 +697,11 @@ section {
     }
 }
 
-.services-area .section-title .services-line {
+.bottom-line {
     padding-top: .33rem;
 }
 
-.services-area .section-title .services-line li {
+.bottom-line li {
     height: 5px;
     background-color: #4858ac;
     display: inline-block;
@@ -709,19 +709,19 @@ section {
     margin-right: 3px;
 }
 
-.services-area .section-title .services-line li:nth-of-type(1) {
+.bottom-line li:nth-of-type(1) {
     width: 3.33rem;
 }
 
-.services-area .section-title .services-line li:nth-of-type(2) {
+.bottom-line li:nth-of-type(2) {
     width: 1rem;
 }
 
-.services-area .section-title .services-line li:nth-of-type(3) {
+.bottom-line li:nth-of-type(3) {
     width: .66rem;
 }
 
-.services-area .section-title .services-line li:nth-of-type(4) {
+.bottom-line li:nth-of-type(4) {
     width: .33rem;
 }
 
@@ -1007,34 +1007,6 @@ section {
     color: #121212;
 }
 
-.testimonial-area .testimonial-left-content .testimonial-line {
-    padding-top: .66rem;
-}
-
-.testimonial-area .testimonial-left-content .testimonial-line li {
-    height: 5px;
-    background-color: #4858ac;
-    display: inline-block;
-    border-radius: 50px;
-    margin-right: 3px;
-}
-
-.testimonial-area .testimonial-left-content .testimonial-line li:nth-of-type(1) {
-    width: 3.33rem;
-}
-
-.testimonial-area .testimonial-left-content .testimonial-line li:nth-of-type(2) {
-    width: 1rem;
-}
-
-.testimonial-area .testimonial-left-content .testimonial-line li:nth-of-type(3) {
-    width: .66rem;
-}
-
-.testimonial-area .testimonial-left-content .testimonial-line li:nth-of-type(4) {
-    width: .33rem;
-}
-
 .testimonial-area .about-accordion .card {
     border: 0;
     background: none;
@@ -1313,4 +1285,155 @@ td {
     font-weight: 700;
     margin-right: 4px;
     color: #151617;
+}
+
+
+/* Gallery */
+
+#gallery .grid img {
+    width: 100%;
+}
+
+#gallery .grid {
+    padding: 20px 20px 10px 20px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+#gallery .grid li {
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+#gallery .grid figure {
+    overflow: hidden;
+}
+
+#gallery .grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    @extend .tsLow;
+    height: auto;
+}
+
+#gallery .grid figcaption {
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    padding: 10px;
+    background: #4858ac;
+    color: var(--first-color-lighter);
+    width: 100%;
+    border-radius: 8px;
+}
+
+#gallery .grid figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+#gallery .grid figcaption span::before {
+    content: 'by ';
+}
+
+#gallery .grid figcaption a {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-color: #fff;
+    background-color: transparent;
+    border-style: solid;
+}
+
+#gallery .grid figcaption a:hover {
+    color: #fff;
+}
+
+@media screen and(min-width:400px) and (max-width: 767px) {
+    #gallery .grid {
+        padding: 10px 10px 100px 10px;
+    }
+    #gallery .grid li {
+        width: 100%;
+        min-width: 300px;
+    }
+    #gallery .grid figcaption {
+        padding-top: 3rem;
+    }
+    #gallery .grid h3 {
+        font-size: 2.5rem;
+    }
+    #gallery .grid figcaption a {
+        padding: 10px 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:430) and (max-width: 767px) {
+    #gallery .grid {
+        padding: 10px 10px 100px 10px;
+    }
+    #gallery .grid li {
+        width: 100%;
+        min-width: 300px;
+    }
+    #gallery .grid figcaption {
+        padding-top: 3rem;
+    }
+    #gallery .grid h3 {
+        font-size: 2.5rem;
+    }
+    #gallery .grid figcaption a {
+        padding: 10px 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 997px) and (max-width:1500px) {
+    #gallery .grid figcaption {
+        padding-top: 2rem;
+    }
+    #gallery .grid h3 {
+        font-size: 2rem;
+    }
+    #gallery .grid figcaption a {
+        padding: 10px 40px;
+        font-size: 1.2rem;
+    }
+}
+
+
+/*Estilo 1*/
+
+.cs-style-1 figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.cs-style-1 figure:hover figcaption,
+.cs-style-1 figure.cs-hover figcaption {
+    opacity: 1;
+    transform: translate(15px, 15px);
+}
+
+.cs-style-1 figcaption h3 {
+    margin-top: 70px;
+}
+
+.cs-style-1 figcaption span {
+    display: block;
+}
+
+.cs-style-1 figcaption a {
+    margin-top: 30px;
 }
